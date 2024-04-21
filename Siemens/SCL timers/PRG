@@ -1,0 +1,24 @@
+"IEC_Timer_0_DB".TP(IN := #Sensor1,
+                    PT := #TP1,
+                    Q => #Q1,
+                    ET => #TOx);
+
+"IEC_Timer_0_DB_1".TON(IN:=#Sensor2,
+                       PT:=#TP2);
+
+"IEC_Timer_0_DB_2".TOF(IN:=#Sensor3,
+                       PT:=#TP3);
+
+"IEC_Timer_0_DB_3".TONR(IN:=#Sensor4,
+                        PT:=#TP4);
+
+
+IF #Start THEN
+    
+#Sensor1 := TRUE;
+#Sensor2 := TRUE;
+#Sensor3 := TRUE;
+#Sensor4 := TRUE;
+
+END_IF;
+
